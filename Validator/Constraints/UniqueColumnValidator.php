@@ -1,5 +1,15 @@
 <?php
 
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) TAKAHASHI Masaki <tarhashi@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+
 namespace Tarhashi\Bundle\ExtraValidatorBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Constraint;
@@ -8,7 +18,7 @@ use Symfony\Component\Validator\ConstraintValidator;
 /**
  * 登録済みでないか調べるためのValidator
  *
- * @author Takahashi Masaki
+ * @author TAKAHASHI Masaki
  */
 class UniqueColumnValidator extends ConstraintValidator
 {
