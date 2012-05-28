@@ -1,0 +1,12 @@
+parameters:
+    tarhashi_extra_validator.uniquecolumn_validator.class:  Tarhashi\Bundle\ExtraValidatorBundle\Validator\Constraints\UniqueColumnValidator
+
+services:
+    validator.tarhashi_extra_validator.uniquecolumn_validator:
+        class: %tarhashi_extra_validator.uniquecolumn_validator.class%
+        factory_class: %tarhashi_extra_validator.uniquecolumn_validator.class%
+        factory_method: get
+        arguments: 
+            em: @doctrine.orm.entity_manager
+        tags:
+            - {name: validator.constraint_validator, alias: uniquecolumn_validator}
