@@ -17,7 +17,7 @@ class HiraganaValidator extends ConstraintValidator
             throw new UnexpectedTypeException($value, 'string');
         }
 
-        if (preg_match('/^[ぁ-ゞ]*$/u', $value)) {
+        if (preg_match('/^[ぁ-ゞー]*$/u', $value)) {
             return true;
         }
         $this->setMessage($constraint->invalidMessage);

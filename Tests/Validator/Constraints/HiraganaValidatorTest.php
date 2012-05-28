@@ -13,6 +13,7 @@ class HiraganaValidatorTest extends \PHPUnit_Framework_TestCase
         $cons = new Hiragana();
         $this->assertFalse($vtor->isValid('abcAbc', $cons));
         $this->assertTrue($vtor->isValid('あいうえお', $cons));
+        $this->assertTrue($vtor->isValid('あいうえおー', $cons));
         $this->assertFalse($vtor->isValid('あいうえお12', $cons));
         $this->assertFalse($vtor->isValid('あいうえおabc', $cons));
         $this->assertFalse($vtor->isValid('漢字', $cons));
