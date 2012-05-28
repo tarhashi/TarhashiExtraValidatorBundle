@@ -17,7 +17,7 @@ use Symfony\Component\Validator\Constraint;
 /**
  * @Annotation
  */
-class Katakaha extends Constraint
+class Katakana extends Constraint
 {
     public $invalidMessage = 'カタカナのみ入力可能です。';
 }
